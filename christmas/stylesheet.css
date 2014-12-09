@@ -1,0 +1,369 @@
+/*THIS CONTROLS THE COUNTDOWN PICTURE*/
+div.side {
+    padding: 293px 0 0 1px;
+    background: #fff url(%%0%%)  no-repeat
+    }
+div.titlebox span.word {
+    display: none
+    }
+
+
+
+
+
+
+ /*announcement sticky*/
+
+     div.content {
+     margin-top:50px;
+     }
+ .titlebox form {
+     position: static
+     }
+ .side h3:nth-of-type(1) {
+     position:absolute;
+     display: block;
+     top: 60px;
+     left: 0px;
+     background-color: #F2F2F2;
+     color: #555555;
+     text-align: left;
+     margin: 15px;
+     border-radius: 8px;
+     width: 56%;
+     padding: 7px 0px 7px 40px;
+     background-image: url(%%button%%);
+     background-repeat: no-repeat;
+     background-position:left;
+     }
+
+
+
+
+/*replace "readers" with something else*/
+
+div.titlebox span.word {
+display: none
+}
+
+div.titlebox .subscribers span.number:after {  
+content: " elves"  
+}
+
+div.titlebox .users-online span.number:after {
+content: " making toys now"
+}
+
+
+/* Adds a 'tag' to certain users. Just copy/paste a new line if you want to add another user or tag. */
+.author[href$="/snarkypants"]:after, .author[href$="/Thlowe"]:after, .author[href$="/snarkypants"]:after {
+    color: red;
+    font-weight: bold;
+    content: " [Comin' to Town]"
+    }
+.author[href$="/Thlowe"]:after {
+    color: #99CC00;
+    font-weight: bold;
+    content: " [Santa's Little Helper]"
+    }
+ .author[href$="/chlod4chlod"]:after {
+    color: #FF9900;
+    font-weight: bold;
+    content: " [Rudolph The Red Nosed Mod]"
+    }
+       
+.author[href*="SmallMiraclesLana"]:after{content:url(%%image%%)}
+
+/* Custom upvote & downvote images */
+.arrow {
+    margin: 2px 0px 0px 0px;
+    height: 25px;
+    display: block;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto
+    }
+    
+.link .arrow.upmod {
+    background-image: url(%%votes%%);
+    background-position: -15px -15px;
+    height: 15px;
+    width: 15px
+    }
+.link .arrow.downmod {
+    background-image: url(%%votes%%);
+    background-position: -15px 0px;
+    height: 14px;
+    width: 15px
+    }
+.link .arrow.up {
+    background-image: url(%%votes%%);
+    background-position: -15px -30px;
+    height: 15px;
+    width: 15px
+    }
+.link .arrow.down {
+    background-image: url(%%votes%%);
+    background-position: -15px -45px;
+    height: 15px;
+    width: 15px
+    }
+    
+.comment .arrow.upmod {
+    background-image: url(%%votes%%);
+    background-position: -0px -15px;
+    height: 15px;
+    width: 15px
+    }
+.comment .arrow.downmod {
+    background-image: url(%%votes%%);
+    background-position: -0px 0px;
+    height: 15px;
+    width: 15px
+    }
+.comment .arrow.up {
+    background-image: url(%%votes%%);
+    background-position: -0px -30px;
+    height: 15px;
+    width: 15px
+    }
+.comment .arrow.down {
+    background-image: url(%%votes%%);
+    background-position: -0px -45px;
+    height: 15px;
+    width: 15px
+    }
+    
+    
+.link .score.likes {
+    color: red
+    }
+.link .score.dislikes {
+    color: blue
+    }
+.link .score.unvoted {
+    color: green;
+}
+a {
+    color: green;
+    text-decoration: none
+    }
+
+
+#header {
+ border-bottom:5px solid #FFD770;
+ position:relative;
+ background-color:#DC143C;
+ z-index:99;
+}
+
+
+
+/* flair*/
+span[class*="flair-icon-"]
+    {
+        border: 1px solid red !important;
+        font-weight: bold;
+        background: transparent;
+        color: green;
+    }
+    
+span[class*="flair-icon-"]:before
+    { 
+        content: "";
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin: -8px -0px;
+        padding: 0px 1px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+
+
+span[class*="flair-icon-"]:before { background-image: url(%%flair%%); }
+
+.flair-icon-santa:before        { background-position: 0px -0px; }
+.flair-icon-star:before         { background-position: 0px -24px; }
+.flair-icon-gold:before         { background-position: 0px -48px; }
+.flair-icon-frank:before        { background-position: 0px -72px; }
+.flair-icon-myrrh:before        { background-position: 0px -96px; }
+.flair-icon-tree:before         { background-position: 0px -120px; }
+.flair-icon-present:before      { background-position: 0px -144px; }
+.flair-icon-elf:before          { background-position: 0px -168px; }
+.flair-icon-elfhead:before      { background-position: 0px -192px; }
+
+/* flair selector spacing */
+.flairsample-right {padding-top: 4px; padding-bottom:4px; width: auto;}
+
+/*Flairs in comments*/
+.comment .flair {margin-top: 6px;}
+
+
+/*Style the automod update button*/
+.wiki a[href$="#button"] {
+    background: #699E39;
+    border: none;
+    color: white !important;
+    display: inline-block;
+    clear: both;
+    font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 31px;
+    margin-bottom: 6px;
+    min-width: 54px !important;
+    padding: 0 4px;
+    text-align: center;
+    border-bottom: 3px solid #587F3E;
+    border-left: 1px solid #5C9E30;
+    border-right: 1px solid #5C9E30;
+    border-radius: 3px;
+    width: 240px;
+}
+
+/* Snow! */
+
+body {
+    background-color: #6b92b9;
+    background-image: url(%%snow1%%), url(%%snow2%%), url(%%snow3%%);
+}
+
+@-webkit-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@-moz-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+
+body {
+    background-color: #6b92b9;
+    background-image: url(%%snow1%%), url(%%snow2%%), url(%%snow3%%);
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+
+
+
+/* Disable snow with ns.reddit.com*/
+
+html:lang(ns) body {
+    background-color: #b4cfe0;
+    background-image: url(%%snow1%%), url(%%snow2%%), url(%%snow3%%);
+    -webkit-animation: snow 0s;
+    -moz-animation: snow 0s;
+    -ms-animation: snow 0s;
+    animation: snow 0s;
+}
+
+/* No snowing through the comments*/
+.comment
+{
+    background: #f0f3fc;
+}
+
+
+/*Upvote texts*/
+
+.thing .upmod:focus::after
+{
+    content:"";
+    font-size: 12px;
+    font-family: Trajan Pro, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: red;
+    text-shadow: 1px 1px 1px green,
+            -1px 1px 1px green,
+            -1px -1px 1px green,
+             1px -1px 1px green,
+             0px 0px 3px green;
+    display:block;
+    position: absolute;
+    animation: upvote 2.5s ease-out;
+    -webkit-animation: upvote 2.5s ease-out;
+    opacity:0;
+    z-index:9001;
+}
+@keyframes upvote 
+{
+    0% {margin-top:0px;opacity:1;}
+    25%{opacity:1;}
+    100% {margin-top:-80px;opacity:0;}
+}
+@-webkit-keyframes upvote 
+{
+    0% {margin-top:0px;opacity:1;}
+    25%{opacity:1;}
+    100% {margin-top:-80px;opacity:0;}
+}
+
+.thing[data-fullname$="a"] .upmod:focus::after { content: "Merry Christmas"; }
+.thing[data-fullname$="b"] .upmod:focus::after { content: "O Little Town of Bethlehem"; }
+.thing[data-fullname$="c"] .upmod:focus::after { content: "Angels we have Heard on High"; }
+.thing[data-fullname$="d"] .upmod:focus::after { content: "Joy to the World"; }
+.thing[data-fullname$="e"] .upmod:focus::after { content: "Deck the Halls"; }
+.thing[data-fullname$="f"] .upmod:focus::after { content: "We Three Kings"; }
+.thing[data-fullname$="g"] .upmod:focus::after { content: "Good King Wenceslas"; }
+.thing[data-fullname$="h"] .upmod:focus::after { content: "We Wish You a Merry Christmas..."; }
+.thing[data-fullname$="i"] .upmod:focus::after { content: "...and a Happy New Year"; }
+.thing[data-fullname$="j"] .upmod:focus::after { content: "Falalalalalalalala"; }
+.thing[data-fullname$="k"] .upmod:focus::after { content: "Naughty or nice?"; }
+.thing[data-fullname$="l"] .upmod:focus::after { content: "I want a Buzz Saw Louie!"; }
+.thing[data-fullname$="m"] .upmod:focus::after { content: "O Holy Night"; }
+.thing[data-fullname$="n"] .upmod:focus::after { content: "On the First day of Christmas"; }
+.thing[data-fullname$="o"] .upmod:focus::after { content: "Ding Dong Merrily on High"; }
+.link[data-fullname$="p"] .upmod:focus::after { content: "Uphatted!"; }
+.comment[data-fullname$="p"] .upmod:focus::after { content: "Upsnowflaked!"; }
+.thing[data-fullname$="q"] .upmod:focus::after { content: "Did Santa come yet?"; }
+.thing[data-fullname$="r"] .upmod:focus::after { content: "Up on a rooftop"; }
+.thing[data-fullname$="s"] .upmod:focus::after { content: "Christmas Dreams!"; }
+.thing[data-fullname$="t"] .upmod:focus::after { content: "Queen of the Winter Night"; }
+.thing[data-fullname$="u"] .upmod:focus::after { content: "Some Brass Music on a CD"; }
+.thing[data-fullname$="v"] .upmod:focus::after { content: "All I got was coal"; }
+.thing[data-fullname$="w"] .upmod:focus::after { content: "He's making a list..."; }
+.thing[data-fullname$="x"] .upmod:focus::after { content: "Doubling money"; }
+.thing[data-fullname$="y"] .upmod:focus::after { content: "Twelve drummers drumming"; }
+.thing[data-fullname$="z"] .upmod:focus::after { content: "Eleven pipers piping"; }
+.thing[data-fullname$="1"] .upmod:focus::after { content: "A partridge in a pear tree"; }
+.thing[data-fullname$="2"] .upmod:focus::after { content: "Two turtle doves"; }
+.thing[data-fullname$="3"] .upmod:focus::after { content: "Three French hens"; }
+.thing[data-fullname$="4"] .upmod:focus::after { content: "Four calling birds"; }
+.thing[data-fullname$="5"] .upmod:focus::after { content: "FIIIIVE GOLDEN RIIIIIINGS"; }
+.thing[data-fullname$="6"] .upmod:focus::after { content: "Six geese a-laying"; }
+.thing[data-fullname$="7"] .upmod:focus::after { content: "Seven Swans a-swimming"; }
+.thing[data-fullname$="8"] .upmod:focus::after { content: "Eight maids a-milking"; }
+.thing[data-fullname$="9"] .upmod:focus::after { content: "Nine ladies dancing"; }
+.thing[data-fullname$="0"] .upmod:focus::after { content: "Ten lords a-leaping"; }
+

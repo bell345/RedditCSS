@@ -1,0 +1,546 @@
+/*
+ *     Welcome to /r/theydidthemath stylesheet.
+ *         
+ *             COST: Clean - Organized - Simplistic - Theme
+ *                 Theme made by /u/titleproblems
+ *                     Visit /r/titleproblems for more variants of COST and for more themes and templates!
+ *                          
+ *                              Organized CSS Comments to make the code more organized by /u/titleproblems
+ *                                  Get it yourself! http://pastebin.com/JebhGdP8
+ *                                  */
+
+/*Gold Username */
+/*
+ * ###################################################################### */
+.author[href*="user/Tebotron"] 
+{ color: white ;
+background-color:gold;
+font-weight: bold }
+
+/* Sidebar image! */
+.side {
+padding-top: 309px; /* Change based on the height of your image */
+background-image: url(%%random%%); /* Upload image on the stylesheet page, and click "Paste into Stylesheet" */
+background-repeat: no-repeat;
+background-position: 0px 5px
+}
+/*
+ * COLOR SCHEME
+ * Main: #8ebeef
+ * Sub-color:   #cee6ff
+ * Border-color: #77a7d6
+ * Background-color: #FFF
+ */*
+
+/* Makes stylesheet nicer */
+#stylesheet_contents {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    padding:5px;
+    background-color:#222;
+    color:#ace;
+    border:2px solid #222; 
+    height: 420px; 
+    font-size: 13px;
+}
+body.res-nightmode #stylesheet_contents {
+    background-color:#111;
+    border-color:#111; 
+    height: 500px; 
+    font-size: 13px;
+}
+/* End of stylesheet changes */
+     
+    /***** Body *****/
+    /***** END of Body *****/
+     
+    /***** Header *****/
+
+
+/* login menu WITHOUT RES */
+#header-bottom-right {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    bottom: 8px;
+    float: right;
+    background: transparent;
+}
+
+/* END of login menu WITHOUT RES */
+
+/* login menu WITH RES */
+
+#header-bottom-right.res-navTop {
+    position: absolute;
+    top: 26px;
+    right: 10px;
+    bottom: 8px;
+    float: right;
+    background: transparent;
+}
+
+#userbarToggle.userbarHide {
+    display: none;
+}
+
+/* END of login menu WITH RES */
+
+#header-bottom-left {
+    
+}
+
+#header {
+    background-color: #8ebeef;
+}
+
+#sr-header-area {
+    background-color: #cee6ff;
+}
+
+    /***** END of Header *****/
+     
+    /***** Tabmenu *****/
+
+.tabmenu li a {
+    background-color: #cee6ff;
+}
+
+    /***** END of Tabmenu *****/
+     
+    /***** Side *****/
+
+.side {
+    margin-top: 25px;
+    padding-left: 10px;
+}
+
+.titlebox .md h1 {
+    background-color: #8ebeef;
+    padding: 5px;
+    text-align: center;
+}
+
+.titlebox .md h2 {
+    background-color: #cee6ff;
+    padding: 8px;
+    color: #000;
+}
+
+.titlebox .md h3 {
+    background-color: #cee6ff;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.titlebox .md hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #cee6ff;
+    color: #cee6ff;
+    border-color: #cee6ff;
+}
+
+/* Link bar on top of the page */
+.side .md h6 {
+    position: absolute;
+    top: 60px;
+    left: -5px;
+    background-color: #FFF;
+    color: rgb(51, 102, 153);
+    border: 1px solid #d1e8ff;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 1px;
+    padding-top: 9px;
+    width: 100%;
+    text-indent: 130px;
+    display: block;
+    height: 19px;
+    padding-right: 3px;
+}
+
+.side .md h6 a {
+    color: rgb(51, 102, 153);
+}
+
+.side .md h6 a:hover {
+    text-decoration: underline;
+}
+/* END of Link bar on top of the page */
+
+/* Dropdown menu top */
+
+.side .md blockquote:last-of-type {
+    position: absolute;
+    top: 60px;
+    left: -2px;
+    border: 0 none;
+    z-index: 10;
+    padding: 2px;
+    background-color: #cee6ff;
+    border-radius: 0px;
+    border-bottom: 1px solid #d1e8ff;
+    font-weight: bold;
+    color: rgb(51, 102, 153);
+}
+
+.side .md blockquote:last-of-type ol {
+    list-style: none;
+    display: inline-block;
+    padding: 3px;
+    margin: 0;
+}
+
+.side .md blockquote:last-of-type ol li { display: none; }
+.side .md blockquote:last-of-type ol li:first-child { display: block; text-decoration: none; }
+.side .md blockquote:last-of-type ol:hover li { display: block; text-decoration: none }
+.side .md blockquote:last-of-type a { color: rgb(51, 102, 153); }
+.side .md blockquote:last-of-type a:hover { text-decoration: underline; }
+
+/* END of Dropdown menu top */
+
+.titlebox blockquote {
+    background-color: rgb(246, 230, 159);
+    border: 1px solid rgb(255, 165, 0);
+    border-radius: 3px;
+    padding: 2px;
+    padding-left: 5px;
+    margin-left: 0px;
+}
+
+/* Submit links */
+
+.morelink {
+    background-color: #8ebeef;
+    background-image: none;
+    border: 1px solid #77a7d6;
+}
+
+.morelink:hover {
+    background-image: none;
+    background-color: #95c6f8;
+    border: 1px solid #77a7d6;
+    text-shadow: 1px 1px 5px #8b5eef;
+}
+
+.morelink .nub {
+    display: none;
+}
+
+/* END of Submit links */
+
+#search input[type="text"] {
+    color: #8ebeef;
+    border: 0px solid #8ebeef;
+    z-index: 6;
+    position: absolute;
+    top: 67px;
+    float: right;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+
+/* Flair selection */
+.titlebox form.flairtoggle {
+    background-color: #cee6ff;
+    border: 1px solid #cee6ff;
+    color: rgb(51, 102, 153);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.titlebox .tagline {
+    border: 1px solid #cee6ff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+/* END of Flair selection */
+
+    /***** END of Side *****/
+     
+    /***** Content *****/
+
+.content {
+    margin-top: 30px;
+}
+
+.link {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d1e8ff;
+}
+
+.entry .buttons li a {
+    color: #7b97b4;
+    font-weight: normal;
+}
+
+.entry .buttons li a.flairselectbtn {
+    font-weight: bold;
+}
+
+.report-button:hover:after {
+    position: absolute;
+    white-space: normal;
+    display: block;
+    z-index: 1000;
+    width: 350px;
+    padding: 5px;
+    border: 0px solid #333;
+    background: #fca;
+    text-align: center;
+    font-size: 10px;
+    color: red;
+    margin-left: 25px;
+    margin-top: 5px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px
+}
+
+.linkinfo {
+    background-color: #b3d9ff;
+    border: 1px solid #8ebeef;
+    border-radius: 0px;
+}
+
+    /***** END of Content *****/
+     
+    /***** RES Stuff *****/
+
+/* RES post highlight */
+
+.res .RES-keyNav-activeElement,
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed,
+.res .keyHighlight,
+.res .commentarea .keyHighlight .md,
+.res .commentarea .keyHighlight.entry .noncollapsed {
+    outline: 0px solid!important;
+    background: none;
+    border-right: 3px solid #8ebeef;
+}
+
+/* END of RES post highlight */
+
+    /***** END of RES Stuff *****/
+     
+    /***** Link Flair Stuff *****/
+
+.linkflair-flair .linkflairlabel {
+    text-transform: uppercase;
+    color: #7b97b4;
+    background: none;
+    border: 0px;
+    display: none;
+}
+html:lang(or) .link:not(.linkflair-request) { display: none; }
+html:lang(os) .link:not(.linkflair-self) { display: none; }
+html:lang(om) .link:not(.linkflair-math) { display: none; }
+html:lang(ff) .link:not(.linkflair-offsite) { display: none; }
+
+    /***** END of Link Flair Stuff *****/
+     
+    /***** User Flair Stuff *****/
+    
+.flair {
+border: none !important;
+padding:0px;
+background: url(%%spritesheet%%) no-repeat -9999px -9999px;
+display:inline-block;
+}
+
+.flair-KjellNilsson{ background-position: 0 0; width: 22px; height: 22px; } 
+.flair-foxy{ background-position: 0 -72px; width: 17px; height: 17px; } 
+.flair-littleguy{ background-position: 0 -139px; width: 22px; height: 22px; } 
+.flair-snooflair{ background-position: 0 -211px; text-indent:23px;  width: 22px; height: 22px; } /* Text indented so it fits all nice and snug */
+
+    /***** End of User Flair Stuff *****/
+     
+    /***** Other *****/
+    /***** END of Other *****/
+    
+/* Read the fucking stickies yeh?  Credit goes to Creesch
+ * -------------------------------------------------------------
+ * .sitetable .thing.stickied {
+ *     border: dashed 10px rgb(255, 92, 0) !important;
+ *         outline: solid 5px red;
+ *         }
+ *         .sitetable .thing.stickied .title {
+ *             font-size: 45px !important;
+ *             }
+ *             .sitetable .thing.stickied .title a {
+ *                 color: rgb(90, 165, 75) !important;
+ *                 }
+ *                 */
+
+/* Really read the fucking stickies 
+ * --------------------------------------- 
+ * .sitetable .thing.stickied .title a {
+ *     -webkit-animation: color 2s infinite;
+ *         -webkit-animation-direction: alternate;
+ *             -moz-animation: color 2s infinite;
+ *                 -moz-animation-direction: alternate;
+ *                     -ms-animation: color 2s infinite;
+ *                         -ms-animation-direction: alternate;
+ *                             -o-animation: color 2s infinite;
+ *                                 -o-animation-direction: alternate;
+ *                                     animation: color 2s infinite;
+ *                                         animation-direction: alternate;
+ *                                         }
+ *                                          
+ *                                          @-webkit-keyframes color {
+ *                                              from {
+ *                                                      color: orange;
+ *                                                          }
+ *                                                           
+ *                                                               to {
+ *                                                                       color: green;
+ *                                                                           }
+ *                                                                           }
+ *                                                                            
+ *                                                                            @-moz-keyframes color {
+ *                                                                                from {
+ *                                                                                        color: orange;
+ *                                                                                            }
+ *                                                                                             
+ *                                                                                                 to {
+ *                                                                                                         color: green;
+ *                                                                                                             }
+ *                                                                                                             }
+ *                                                                                                              
+ *                                                                                                              @-ms-keyframes color {
+ *                                                                                                                  from {
+ *                                                                                                                          color: orange;
+ *                                                                                                                              }
+ *                                                                                                                               
+ *                                                                                                                                   to {
+ *                                                                                                                                           color: green;
+ *                                                                                                                                               }
+ *                                                                                                                                               }
+ *                                                                                                                                                
+ *                                                                                                                                                @-o-keyframes color {
+ *                                                                                                                                                    from {
+ *                                                                                                                                                            color: orange;
+ *                                                                                                                                                                }
+ *                                                                                                                                                                 
+ *                                                                                                                                                                     to {
+ *                                                                                                                                                                             color: green;
+ *                                                                                                                                                                                 }
+ *                                                                                                                                                                                 }
+ *                                                                                                                                                                                  
+ *                                                                                                                                                                                  @keyframes color {
+ *                                                                                                                                                                                      from {
+ *                                                                                                                                                                                              color: orange;
+ *                                                                                                                                                                                                  }
+ *                                                                                                                                                                                                   
+ *                                                                                                                                                                                                       to {
+ *                                                                                                                                                                                                               color: green;
+ *                                                                                                                                                                                                                   }
+ *                                                                                                                                                                                                                   }
+ *                                                                                                                                                                                                                    
+ *                                                                                                                                                                                                                    .sitetable .thing.stickied {
+ *                                                                                                                                                                                                                        -webkit-animation: colour 3s infinite;
+ *                                                                                                                                                                                                                            -webkit-animation-direction: alternate;
+ *                                                                                                                                                                                                                                -moz-animation: colour 3s infinite;
+ *                                                                                                                                                                                                                                    -moz-animation-direction: alternate;
+ *                                                                                                                                                                                                                                        -ms-animation: colour 3s infinite;
+ *                                                                                                                                                                                                                                            -ms-animation-direction: alternate;
+ *                                                                                                                                                                                                                                                -o-animation: colour 3s infinite;
+ *                                                                                                                                                                                                                                                    -o-animation-direction: alternate;
+ *                                                                                                                                                                                                                                                        animation: colour 3s  infinite;
+ *                                                                                                                                                                                                                                                            animation-direction: alternate;
+ *                                                                                                                                                                                                                                                            }
+ *                                                                                                                                                                                                                                                             
+ *                                                                                                                                                                                                                                                             @-webkit-keyframes colour {
+ *                                                                                                                                                                                                                                                                 from {
+ *                                                                                                                                                                                                                                                                         border-color: orange;
+ *                                                                                                                                                                                                                                                                             }
+ *                                                                                                                                                                                                                                                                              
+ *                                                                                                                                                                                                                                                                                  to {
+ *                                                                                                                                                                                                                                                                                          border-color: green;
+ *                                                                                                                                                                                                                                                                                              }
+ *                                                                                                                                                                                                                                                                                              }
+ *                                                                                                                                                                                                                                                                                               
+ *                                                                                                                                                                                                                                                                                               @-moz-keyframes colour {
+ *                                                                                                                                                                                                                                                                                                   from {
+ *                                                                                                                                                                                                                                                                                                           border-color: orange;
+ *                                                                                                                                                                                                                                                                                                               }
+ *                                                                                                                                                                                                                                                                                                                
+ *                                                                                                                                                                                                                                                                                                                    to {
+ *                                                                                                                                                                                                                                                                                                                            border-color: green;
+ *                                                                                                                                                                                                                                                                                                                                }
+ *                                                                                                                                                                                                                                                                                                                                }
+ *                                                                                                                                                                                                                                                                                                                                 
+ *                                                                                                                                                                                                                                                                                                                                 @-ms-keyframes colour {
+ *                                                                                                                                                                                                                                                                                                                                     from {
+ *                                                                                                                                                                                                                                                                                                                                             border-color: orange;
+ *                                                                                                                                                                                                                                                                                                                                                 }
+ *                                                                                                                                                                                                                                                                                                                                                  
+ *                                                                                                                                                                                                                                                                                                                                                      to {
+ *                                                                                                                                                                                                                                                                                                                                                              border-color: : green;
+ *                                                                                                                                                                                                                                                                                                                                                                  }
+ *                                                                                                                                                                                                                                                                                                                                                                  }
+ *                                                                                                                                                                                                                                                                                                                                                                   
+ *                                                                                                                                                                                                                                                                                                                                                                   @-o-keyframes colour {
+ *                                                                                                                                                                                                                                                                                                                                                                       from {
+ *                                                                                                                                                                                                                                                                                                                                                                               border-color: orange;
+ *                                                                                                                                                                                                                                                                                                                                                                                   }
+ *                                                                                                                                                                                                                                                                                                                                                                                    
+ *                                                                                                                                                                                                                                                                                                                                                                                        to {
+ *                                                                                                                                                                                                                                                                                                                                                                                                border-color: green;
+ *                                                                                                                                                                                                                                                                                                                                                                                                    }
+ *                                                                                                                                                                                                                                                                                                                                                                                                    }
+ *                                                                                                                                                                                                                                                                                                                                                                                                     
+ *                                                                                                                                                                                                                                                                                                                                                                                                     @keyframes colour {
+ *                                                                                                                                                                                                                                                                                                                                                                                                         from {
+ *                                                                                                                                                                                                                                                                                                                                                                                                                 border-color: orange;
+ *                                                                                                                                                                                                                                                                                                                                                                                                                     }
+ *                                                                                                                                                                                                                                                                                                                                                                                                                      
+ *                                                                                                                                                                                                                                                                                                                                                                                                                          to {
+ *                                                                                                                                                                                                                                                                                                                                                                                                                                  border-color: green;
+ *                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+ *                                                                                                                                                                                                                                                                                                                                                                                                                                      } 
+ *
+ *                                                                                                                                                                                                                                                                                                                                                                                                                                      */
+/* End Sticky Stuff*/
+
+/* SlayerMaster's flairs
+ * ----------------------------*/
+
+
+/******************* START Default Thumbnails *******************/
+
+.self .thumbnail { background:url(%%selfpost%%); background-position:center center; width:75px; height:55px; }
+
+/******************* END Default Thumbnails *******************/
+
+/* Autowikibot hover to display by /u/Dropping_fruits */
+/* Code updates and discussion: http://redd.it/1vr0r2 */
+
+.comment .md h5+h6+h4+p,.comment .md h5+h6+h4+p+hr,.comment .md h5+h6+h4+p+hr+blockquote,.comment .md h5+h6+h4+p+hr+blockquote+hr,.comment .md h5+h6+h4+p+hr+blockquote+hr+p,.comment .md h5+h6+h4+p+hr+blockquote+hr+p+p {
+    display: none;
+}
+
+.comment .md:hover h5+h6+h4+p,.comment .md:hover h5+h6+h4+p+hr,.comment .md:hover h5+h6+h4+p+hr+blockquote,.comment .md:hover h5+h6+h4+p+hr+blockquote+hr,.comment .md:hover h5+h6+h4+p+hr+blockquote+hr+p,.comment .md:hover h5+h6+h4+p+hr+blockquote+hr+p+p {
+    display: block;
+}
+
+.comment .md h5+h6+h4:after {
+    content: "Autowikibot post. Hover to view";
+}
+
+.comment .md:hover h5+h6+h4:after {
+content: ""
+}

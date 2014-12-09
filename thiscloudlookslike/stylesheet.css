@@ -1,0 +1,171 @@
+/***************** HEADER ****************/
+
+/*=== HEADER COLOR AND SIZE ===*/
+
+#header { 
+    border-radius: 0px;
+    height:85px;
+    background: #ffffff url(%%buttheader%%) left bottom repeat;
+    position: relative;}
+
+#header-img {
+    margin-top: 26px;
+    margin-left: 7px!important;}
+
+#sr-header-area{ 
+    border-color: black;
+    font-weight: normal;}
+
+#sr-header-area a {
+    color: black;
+    font-size: 90% !important;}
+
+.dropdown.srdrop .selected {
+    color: black;
+    font-weight: normal;
+    font-size: 90% !important;}
+
+.pagename a {
+    text-indent: -99em;
+    display: inline-block;
+    width: 180px;
+    position: relative;
+}
+.pagename:after {
+    content: 'This Butt Looks Like...';
+    margin-left: -160px;
+}
+.side .titlebox .redditname a {
+    text-indent: -99em;
+    display: inline-block;
+    width: 80px;
+    position: relative;
+}
+.side .titlebox .redditname:after {
+    content: 'This Butt Looks Like...';
+    margin-left: -70px;
+}
+
+/*=== TAB MENU ===*/
+
+ #header .tabmenu {
+   position:absolute;
+   left:381px;
+   top:63px;
+   height:21px;
+   right:120px}
+
+.tabmenu li a {
+    background-color:transparent;}
+
+.tabmenu li.selected a {
+color:black;}
+
+.tabmenu li a:hover {
+    color: black;}
+
+/*=== USER BAR ===*/
+
+#header-bottom-right { 
+
+    background-color: #ffffff; }
+
+#userbarToggle {   opacity:0;}
+
+.user a { 
+    color: #47443f; 
+    letter-spacing: 1px;
+    font-weight:bold;}
+
+.user { 
+    color: #47443f; 
+    font-weight:normal; }
+
+
+/****************** SIDEBAR ***************/
+
+
+/*=== SIDEBAR FORMATTING ===*/
+
+.side {
+    background-color: transparent;
+    margin-top: 5px;
+    width:295px;
+    padding: 0px 4px;}
+
+.morelink {
+    text-align: center;
+    position: relative;
+    margin-top:-5px;
+    margin-left:-4px;
+    width:301px;
+    background: #dceffb;
+    border: 1px solid #082898;
+    visibility: visible !important}
+
+.morelink:hover, .mlh {
+    background: #6bb9e6;
+    border-color: black;
+    background-image: none;
+    visibility: visible !important}
+
+.morelink a {
+    width: 100%;
+    letter-spacing:1.5px;
+    color: #2f2d2a;}
+
+.morelink:hover a {
+    width: 100%;
+    letter-spacing:1.5px;
+    color: white;}
+
+.morelink .nub { display: none}
+
+
+/*=== SIDEBAR BOXES ===*/
+
+.side blockquote + hr {
+  border-width:0;
+  width:0;
+  margin:20px 0 0;}
+
+.side blockquote {
+  border:0 none;
+  padding:0px;
+  margin:0;
+  border:1px solid #FEF5D3;
+  background-color:#dceffb;}
+
+.side blockquote h1 ~ p { margin-left:12px; }
+.side blockquote h1 { background-color:transparent!important; margin-left: 5px; margin-bottom: 5px; font-size: 140%;}
+
+
+/* === Search Box ==== */
+
+#search input[type=text] {
+    border: 1px solid #082898;
+    color: black;
+    font-size: 18px;
+    width: 298px;
+    margin-left:-4px;
+    padding: 2px;
+    text-align: center;
+    height: 20px;}
+
+.infobar {
+    background-color: #e5f3fc;
+    border: 1px solid #082898;}
+
+/*************** BODY ***************/
+
+
+/*=== BODY MARGIN AND BORDERS ===*/
+
+div.content {margin-top: 20px;}
+
+.thing{overflow:hidden}
+
+.bottommenu.debuginfo:before
+{
+content:" CSS by /u/IzzySawicki          ";
+}
