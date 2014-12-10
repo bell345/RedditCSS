@@ -18,7 +18,7 @@ You *can* delete code! You *can* delete assets, if you need. There are some exce
 
 * Line 860 and beyond should be untouched
 
-Anything else is fair game. Note that both the above can be changed, but only if chaning its design. The function must remain.
+Anything else is fair game. Note that both the above can be changed, but only if changing its design. The function must remain.
 
 ---
 
