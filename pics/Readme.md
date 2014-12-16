@@ -8,7 +8,7 @@ There isn't much to it, but there are a few things that we should make clear:
 
 * Avoid animations
 
-* Any sprites you use must be yours to use. Optain permission if they are not yours.
+* Any sprites you use must be yours to use. Obtain permission if they are not yours.
 
 ---
 
