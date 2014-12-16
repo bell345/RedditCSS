@@ -23,3 +23,5 @@ Anything else is fair game. Note that both the above can be changed, but only if
 ---
 
 Any questions, comments, or concerns can be sent to /u/allthefoxes on reddit. See the post on reddit for some more information
+
+**Please have your stylesheet submitted by January 31st, 2015**
