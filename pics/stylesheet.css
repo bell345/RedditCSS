@@ -59,8 +59,8 @@ div.titlebox span.word {
 display: none
 }
 
-div.titlebox .subscribers span.number:after {  
-content: " photographers"  
+div.titlebox .subscribers span.number:after {
+content: " photographers"
 }
 
 div.titlebox .users-online span.number:after {
@@ -121,10 +121,7 @@ color:green;
 /* BEP smoothing of top tabs */
 
 .tabmenu li a{
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;
+
 }
 
 /* highlight original poster, taken from IamA */
@@ -187,7 +184,7 @@ body > .content > .sharelink ~ .sitetable:before {
     color: red;
 }
 
-/* 
+/*
  * ** Tool-tip hover for report button -roger_
  * */
 .linklisting .report-button:hover:before {
@@ -243,7 +240,7 @@ body > .content > .sharelink ~ .sitetable:before {
     list-style-type: upper-roman;
     font-weight:bold;
     font-size:90%;
-    text-align:justify;  
+    text-align:justify;
     color:black;
     }
 
@@ -277,7 +274,7 @@ body > .content > .sharelink ~ .sitetable:before {
 /*User flair*/
 
 .flair {
-    padding:0; 
+    padding:0;
     color:DimGray;
     border:0;
     border-radius:0;
@@ -288,7 +285,7 @@ body > .content > .sharelink ~ .sitetable:before {
 
 }
 
-.flair-glass {   
+.flair-glass {
     background: transparent;
     background-image: url(%%spyglass%%);
     background-repeat: no-repeat;
@@ -297,7 +294,7 @@ body > .content > .sharelink ~ .sitetable:before {
     height: 16px;
  }
 
-.flair-ring {   
+.flair-ring {
     background: transparent;
     background-image: url(%%OneRing%%);
     background-repeat: no-repeat;
@@ -305,7 +302,7 @@ body > .content > .sharelink ~ .sitetable:before {
     width: 17px;
     height: 16px;
 }
-.flair-fox {   
+.flair-fox {
     background: transparent;
     background-image: url(%%Foxes%%);
     background-repeat: no-repeat;
@@ -313,7 +310,7 @@ body > .content > .sharelink ~ .sitetable:before {
     width: 17px;
     height: 16px;
  }
-.flair-sheep {   
+.flair-sheep {
     background: transparent;
     background-image: url(%%sheep%%);
     background-repeat: no-repeat;
@@ -334,7 +331,7 @@ a[class~="comments"]:after {
     background-color: #FFE8ED;
     content: "";
     color: red;
-    border-color: red; 
+    border-color: red;
     font-weight:bold;
     border-style:dashed;
     border-width:1px;
@@ -373,7 +370,7 @@ a[href*="/cakeday"][class~="comments"]:before {
     display:block;
 }
 
-/* Match post titles: nsfw" 
+/* Match post titles: nsfw"
  * a[href*="_gore_"][class~="comments"]:before {
  *     content: "NSFW submissions not permitted. Read rule II";
  *         text-decoration: none;
@@ -426,7 +423,7 @@ a[href*="/if_you_do_this"].comments:after {
     content: "Clichéd/unoriginal post title";
     display:block;
     color: white;
-    border-color: white; 
+    border-color: white;
     background-color:#CCCCCC;
     margin-left: 2px;
     margin-right: 0px;
@@ -451,7 +448,7 @@ a[href*="anybody_know"][class~="comments"]:before
 /**************************/
 /* Take custom headers from bold text */
 .titlebox tr strong, .titlebox th  {
-    color: white; 
+    color: white;
     background-color: #51AEFF;
     margin-top:-2px;
     margin-right:-3px;
@@ -518,7 +515,7 @@ a[href*="anybody_know"][class~="comments"]:before
     padding-right:4px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 /* defaults for extension tags only */
@@ -606,7 +603,7 @@ a[href*="anybody_know"][class~="comments"]:before
 .thing.spam .domain a[href*="edencaf.forumfree.it"] {
     background-color: red;
 }
- 
+
 /* add indicator */
 .thing.spam .domain a[href*="quickmeme.com"]:after,
 .thing.spam .domain a[href*="qkme.me"]:after,
@@ -644,7 +641,7 @@ a[href*="anybody_know"][class~="comments"]:before
 .linkflair-bad .linkflairlabel {
     background-color: #FFE8ED;
     color: red;
-    border-color: red; 
+    border-color: red;
     font-weight:bold;
     border-style:dashed;
     border-width:1px;
@@ -728,7 +725,7 @@ html:lang(re) .moderator.listing-page .linklisting  .thing.link {
 /* move parent to left */
 html:lang(re) .moderator.listing-page ul.flat-list.buttons li:nth-child(6) {
     position: absolute !important;
-    left: 0px;    
+    left: 0px;
     width: 20px;
     height: 100px;
 }
@@ -861,7 +858,7 @@ html:lang(re) .thing .title   {
 html:lang(nt) #siteTable.sitetable.linklisting:not(.organic-listing) .thing a.title  {
 font-size: 0 !important;
 }
- 
+
 html:lang(nt) #siteTable.sitetable.linklisting:not(.organic-listing) .thing a.title:after {
 font-size: initial !important;
 content: "[Title Hidden]";
@@ -869,8 +866,8 @@ content: "[Title Hidden]";
 
 html:lang(nt) a.thumbnail img {
     width: 140px;
-    height: auto; /* since not all images square */ 
- } 
+    height: auto; /* since not all images square */
+ }
 
 html:lang(nt) a.thumbnail {
     width: 140px;
@@ -894,4 +891,520 @@ html:lang(nt) a.thumbnail {
 .commentarea .usertext textarea:focus {
     background-position: 0 -104px;
     right: -50px
+}
+
+/*   ==/  START NEW  STUFF HERE  \==   */
+/*           /u/isurvived12            */
+/*  Thomas Bell <tom.aus@outlook.com>  */
+
+
+/* header and backgrounds */
+body {
+    background:#eee;
+    background:linear-gradient(45deg, #e6e6e6, #e6e6e6 50%, #eee 50%, #eee 100%) center / 45px 45px;
+}
+#header {
+    background:#555;
+    background:-webkit-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
+    background:-moz-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
+    background:-ms-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
+    background:-o-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
+    background:linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
+    border:0;
+    transition:0.2s background;
+}
+.tabmenu {
+    display:block;
+    background:rgba(50,50,50,0.3);
+    height:42px;
+    line-height:42px;
+}
+.tabmenu li {
+    display:inline-block;
+    height:100%;
+    margin:0;
+}
+.tabmenu li:first-child {
+    margin-left:14px;
+}
+.tabmenu li a {
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    border:0;
+    padding:0 12px;
+    color:#d2d2d2;
+    background:none;
+    display:inline-block;
+    height:100%;
+    margin:0;
+}
+.content {
+    z-index:9;
+}
+.tabmenu li.selected a {
+    color:#0094ff;
+    border:0;
+    background:#eee;
+}
+.tabmenu li:not(.selected) a:hover {
+    background:rgba(50,50,50,0.5);
+    color:#eee;
+}
+.pagename a {
+    color:#eee;
+    font-size:24px;
+}
+
+/* Non-RES nav bar */
+#header-bottom-right:not(.res-navTop) {
+    line-height:42px;
+    padding:0 12px;
+    border-radius:0;
+    background:none;
+    font-weight:bold;
+    font-size:12px;
+    top:auto;
+    bottom:0;
+}
+#header-bottom-right:not(.res-navTop) .user {
+    padding-right:12px;
+}
+#header-bottom-right:not(.res-navTop) .user a {
+    padding-left:12px;
+    color:#09f;
+}
+#header-bottom-right:not(.res-navTop) .user a:hover {
+    color:#2bf;
+}
+#header-bottom-right:not(.res-navTop) .flat-list a, #header-bottom-right:not(.res-navTop) .logout a {
+    padding:0 12px;
+}
+#header-bottom-right:not(.res-navTop) a, #header-bottom-right:not(.res-navTop) > * {
+    display:inline-block;
+    background:none;
+    color:#d2d2d2;
+}
+#header-bottom-right:not(.res-navTop) > * {
+    position:relative;
+}
+#header-bottom-right:not(.res-navTop) > *:hover {
+    background:rgba(50,50,50,0.5);
+    color:#eee;
+    text-decoration:none;
+}
+#header-bottom-right:not(.res-navTop) a {
+}
+#header-bottom-right:not(.res-navTop) a:hover {
+    text-decoration:none;
+}
+#header-bottom-right:not(.res-navTop) .user {
+    background:#eee;
+    color:#555;
+}
+#header-bottom-right > .separator {
+    display:none !important;
+}
+#header-bottom-right:not(.res-navTop) #mail {
+    overflow:visible;
+    width:auto;
+    top:0;
+    width:15px;
+    padding:0 12px;
+    height:auto;
+    background:none;
+}
+#header-bottom-right #mail:hover {
+    background-color:rgba(50,50,50,0.5);
+}
+#header-bottom-right #mail::after {
+    content:"";
+    background-image:url(assets/sprite-reddit.png);
+    background-repeat:no-repeat;
+    top:50%;
+    left:50%;
+    position:absolute;
+    width:15px;
+    margin-left:-7.5px;
+    height:10px;
+    margin-top:-5px;
+}
+#header-bottom-right #mail.nohavemail::after {
+    background-position:-79px -838px;
+}
+#header-bottom-right #mail.havemail::after {
+    background-position:-58px -838px;
+}
+
+/* RES specific nav bar */
+#header-bottom-right.res-navTop {
+    padding:0 8px 0 10px;
+    bottom:0;
+    top:auto;
+    line-height:42px;
+    background:none;
+}
+#header-bottom-right.res-navTop a, #header-bottom-right.res-navTop #openRESPrefs {
+    padding:0 12px;
+}
+#header-bottom-right.res-navTop a:not(#mail) {
+    color:#d2d2d2;
+    height:100%;
+    display:inline-block;
+    font-weight:bold;
+    font-size:12px;
+}
+#header-bottom-right.res-navTop a:not(#mail):hover {
+    background-color:rgba(50,50,50,0.5);
+    color:#eee;
+    text-decoration:none;
+}
+#header-bottom-right.res-navTop .user {
+    padding-right:12px;
+    display:inline-block;
+    background:#eee;
+}
+#header-bottom-right.res-navTop .user a:not(#mail) {
+    color:#0094ff;
+}
+#header-bottom-right.res-navTop .user > a {
+    padding-right:0;
+}
+#header-bottom-right.res-navTop .user a:not(#mail):hover {
+    background-color:transparent;
+    color:#2bf;
+}
+#header-bottom-right.res-navTop .userkarma a,
+#header-bottom-right.res-navTop #mail,
+#header-bottom-right.res-navTop #mailCount {
+    padding:0;
+}
+#header-bottom-right.res-navTop #mail {
+    padding:0 12px;
+    top:17px !important;
+    height:42px;
+    background-image:none;
+}
+#header-bottom-right.res-navTop #mail.havemail {
+    padding-right:0;
+}
+#header-bottom-right.res-navTop #mail.havemail::after {
+    margin-left:-1px;
+}
+#header-bottom-right.res-navTop #mail.havemail + #mailCount {
+    padding:0 12px;
+}
+#header-bottom-right.res-navTop #mail.havemail:hover + #mailCount {
+    background-color:rgba(50,50,50,0.5);
+    color:#eee;
+}
+#header-bottom-right #userbarToggle + * {
+    margin-left:7px;
+}
+#header-bottom-right #userbarToggle {
+    background:none;
+    color:#eee;
+    line-height:40px;
+    border-radius:0;
+    border:0;
+    height:42px;
+}
+#header-bottom-right #userbarToggle.userbarShow {
+    top:-42px;
+    height:42px;
+    right:0;
+}
+#RESMainGearOverlay {
+    padding:0 12px;
+}
+#RESMainGearOverlay .gearIcon {
+    margin:8px 12px;
+}
+
+/* sidebar */
+.side {
+    padding:16px 30px;
+    border:0;
+    border-radius:0;
+    box-shadow:0 0 8px 2px #aaa;
+}
+.side #search {
+    background:#f2f2f2;
+}
+.side #search input[type="text"] {
+    background:#eee;
+    border:0;
+}
+.infobar {
+    background:#f2f2f2;
+    padding:12px 14px;
+    border:0;
+    border-radius:0;
+}
+#searchexpando {
+    padding-top:6px;
+}
+#searchexpando label select::before {
+    content:" ";
+}
+.linkinfo {
+    border:0;
+    border-radius:0;
+    background:transparent;
+    padding:8px 12px;
+}
+.morelink {
+    border:1px solid #eee;
+    background-image:url(assets/sprite-reddit.png);
+    color:#555;
+}
+.morelink a {
+    color:#555;
+}
+.morelink .nub {
+    background-image:url(assets/sprite-reddit.png);
+}
+.morelink:hover {
+    background-image:url(assets/sprite-reddit.png);
+    border:1px solid #555;
+}
+.morelink:hover a {
+    color:#eee;
+}
+.morelink:hover .nub {
+    background-image:url(assets/sprite-reddit.png);
+}
+.titlebox {
+    text-align:center;
+}
+.side .usertext-body {
+    text-align:justify;
+}
+.titlebox .redditname {
+    text-align:center;
+    font-size:24px;
+}
+body:not(.res) .titlebox .subscribe-button, body.res .titlebox .subButtons {
+    display:block;
+    text-align:center;
+}
+.titlebox .subscribe-button a, .subButtons span {
+    border:0;
+    border-radius:0;
+    padding:4px 8px;
+}
+.titlebox .subscribe-button a.remove {
+    background:#d00;
+}
+.titlebox .subscribe-button a.remove:hover {
+    background:#b00;
+}
+.titlebox .subscribe-button a.add {
+    background:#09f;
+}
+.titlebox .subscribe-button a.add:hover {
+    background:#07d;
+}
+.titlebox .usertext-body ol {
+    border-radius:0;
+    padding:8px 32px;
+    padding-left:38px;
+    border:0;
+    position:relative;
+}
+.titlebox .usertext-body .md {
+    overflow:visible;
+}
+.titlebox .usertext-body ol::before {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:-36px;
+    padding-left:36px;
+    background:#ffeded;
+}
+.titlebox .usertext-body ol::after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:-30px;
+    padding-right:30px;
+    background:#ffeded;
+}
+.side .sidecontentbox ul.content {
+    border:0;
+}
+
+/* front page links */
+#siteTable .link {
+    margin:12px;
+    background:#f8f8f8;
+    box-shadow:4px 4px 8px 2px #ccc;
+    height:auto;
+}
+#siteTable .link .entry {
+    margin-left:8px;
+}
+.link .title {
+    font-family:"Liberation Sans", "Arial", sans-serif;
+    font-size:18px;
+}
+.link .title a {
+    color:#0094ff;
+}
+.link .entry .tagline {
+    font-size:12px;
+}
+.link .entry .buttons a {
+    font-weight:normal;
+    font-size:11px;
+}
+.link .entry .buttons a.comments {
+    color:#0094ff;
+    font-weight:bold;
+}
+.link .domain, .link .domain a {
+    font-size:12px;
+    color:#bbb;
+}
+#siteTable_organic .link .entry {
+    margin-left:8px;
+}
+#siteTable .link.stickied {
+    width:initial;
+    display:block;
+    background:#eef8ee;
+    box-shadow:4px 4px 8px 2px #ccd8cc;
+}
+
+
+/* for promoted links */
+#siteTable_organic {
+    border:0;
+    background:#eee !important;
+}
+#siteTable_organic .link.promoted {
+    background-color:#f8f8ee !important;
+    margin:12px;
+    padding:12px 0;
+    box-shadow:4px 4px 8px 2px #d8d8cc;
+}
+#siteTable_organic .link.promoted .entry .title {
+    color:#686855;
+}
+.organic-listing .help {
+    right:13px;
+    bottom:14px;
+}
+
+
+/* text/comments */
+* {
+    font-family:"Liberation Sans", "Verdana", "Helvetica", "Arial", sans-serif;
+}
+.entry {
+    padding:8px 12px;
+}
+.comments-page #siteTable .link .thumbnail img {
+    width:140px;
+    height:auto;
+}
+.comments-page #siteTable .link .thumbnail:not(.self) {
+    width:140px;
+    overflow:visible;
+}
+.link .usertext .md {
+    border:0;
+    padding:4px 12px;
+    background:#f2f2f2;
+    border-radius:0;
+}
+.comment {
+    background:#f8f8f8;
+    padding:6px 12px !important;
+    border:0;
+    border-radius:0;
+}
+.commentarea > div > .comment {
+    margin-bottom:24px;
+    box-shadow:4px 4px 8px 2px #ddd;
+}
+.comment .child {
+    border-left:2px dotted #ddd !important;
+}
+.morecomments {
+}
+.morecomments a {
+    color:#eee !important;
+    margin-left:8px;
+    padding:4px 8px;
+    background:#0094ff;
+    box-shadow:2px 2px 4px 1px #ddd;
+    transition:0.4s all;
+}
+.morecomments a .gray {
+    color:#ddd;
+}
+.morecomments a:hover {
+    background:#00a4ff;
+    text-decoration:none;
+}
+.morechildren .entry {
+    overflow:visible;
+}
+a, .tagline a {
+    color:#0094ff;
+}
+a:hover, .tagline a:hover {
+    color:#2bf;
+}
+.md hr, .md > hr {
+    border:0;
+    border-top:2px dotted #999;
+    margin:8px 0 !important;
+}
+
+
+/* voting */
+.arrow.up {
+    background:url(assets/up-neutral.png) 0 0 no-repeat;
+}
+.arrow.upmod {
+    background:url(assets/upvoted-orangered.png) 0 0 no-repeat;
+}
+.arrow.down {
+    background:url(assets/down-neutral.png) 0 2px no-repeat;
+}
+.arrow.downmod {
+    background:url(assets/downvoted-periwinkle.png) 0 2px no-repeat;
+}
+.score {
+    font-weight:normal;
+    font-family:"Liberation Sans", Arial, sans-serif;
+}
+
+/* names/flairs */
+.thing .tagline .author.submitter {
+    border-radius:0;
+    padding:2px 8px;
+    color:#eee;
+    background-color:#05d !important;
+    font-weight:bold;
+}
+.thing .tagline .author.moderator {
+    border-radius:0;
+    padding:2px 8px;
+    color:#eee;
+    background-color:#090 !important;
+    font-weight:bold;
+}
+.thing .tagline .author.submitter:hover {
+    background-color:#00a !important;
+    text-decoration:none;
+}
+.thing .tagline .author.moderator:hover {
+    background-color:#040 !important;
+    text-decoration:none;
 }
