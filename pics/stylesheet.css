@@ -532,7 +532,7 @@ a[href*="anybody_know"][class~="comments"]:before
 }
 
 /* Tag PNG files */
-.thing.spam .title a[href$=".png"]:after {
+.thing.spam .title a[href$="%%"]:after {
     background-color:green;
     content:"PNG";
 }
@@ -1021,7 +1021,7 @@ body {
 }
 #header-bottom-right #mail::after {
     content:"";
-    background-image:url(assets/sprite-reddit.png);
+    background-image:url(%%sprite-reddit%%);
     background-repeat:no-repeat;
     top:50%;
     left:50%;
@@ -1157,24 +1157,24 @@ body {
 }
 .morelink {
     border:1px solid #eee;
-    background-image:url(assets/sprite-reddit.png);
+    background-image:url(%%sprite-reddit%%);
     color:#555;
 }
 .morelink a {
     color:#555;
 }
 .morelink .nub {
-    background-image:url(assets/sprite-reddit.png);
+    background-image:url(%%sprite-reddit%%);
 }
 .morelink:hover {
-    background-image:url(assets/sprite-reddit.png);
+    background-image:url(%%sprite-reddit%%);
     border:1px solid #555;
 }
 .morelink:hover a {
     color:#eee;
 }
 .morelink:hover .nub {
-    background-image:url(assets/sprite-reddit.png);
+    background-image:url(%%sprite-reddit%%);
 }
 .titlebox {
     text-align:center;
@@ -1406,16 +1406,16 @@ a:hover, .tagline a:hover {
 
 /* voting */
 .arrow.up {
-    background:url(assets/up-neutral.png) 0 0 no-repeat;
+    background:url(%%up-neutral%%) 0 0 no-repeat;
 }
 .arrow.upmod {
-    background:url(assets/upvoted-orangered.png) 0 0 no-repeat;
+    background:url(%%upvoted-orangered%%) 0 0 no-repeat;
 }
 .arrow.down {
-    background:url(assets/down-neutral.png) 0 2px no-repeat;
+    background:url(%%down-neutral%%) 0 2px no-repeat;
 }
 .arrow.downmod {
-    background:url(assets/downvoted-periwinkle.png) 0 2px no-repeat;
+    background:url(%%downvoted-periwinkle%%) 0 2px no-repeat;
 }
 .score {
     font-weight:bold;
