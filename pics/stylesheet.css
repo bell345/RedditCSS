@@ -532,7 +532,7 @@ a[href*="anybody_know"][class~="comments"]:before
 }
 
 /* Tag PNG files */
-.thing.spam .title a[href$="%%"]:after {
+.thing.spam .title a[href$=".png"]:after {
     background-color:green;
     content:"PNG";
 }
