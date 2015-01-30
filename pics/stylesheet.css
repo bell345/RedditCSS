@@ -901,15 +901,17 @@ html:lang(nt) a.thumbnail {
 /* header and backgrounds */
 body {
     background:#eee;
+    background:-webkit-linear-gradient(45deg, #e6e6e6, #e6e6e6 50%, #eee 50%, #eee 100%) center / 45px 45px;
+    background:-moz-linear-gradient(45deg, #e6e6e6, #e6e6e6 50%, #eee 50%, #eee 100%) center / 45px 45px;
+    background:-ms-linear-gradient(45deg, #e6e6e6, #e6e6e6 50%, #eee 50%, #eee 100%) center / 45px 45px;
     background:linear-gradient(45deg, #e6e6e6, #e6e6e6 50%, #eee 50%, #eee 100%) center / 45px 45px;
 }
 #header {
     background:#555;
-    background:-webkit-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
-    background:-moz-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
-    background:-ms-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
-    background:-o-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
-    background:linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) center / 15px 15px;
+    background:-webkit-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) fixed center / 15px 15px;
+    background:-moz-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) fixed center / 15px 15px;
+    background:-ms-linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) fixed center / 15px 15px;
+    background:linear-gradient(45deg, #494949, #494949 50%, #555 50%, #555 100%) fixed center / 15px 15px;
     border:0;
     transition:0.2s background;
 }
@@ -1223,6 +1225,7 @@ body:not(.res) .titlebox .subscribe-button, body.res .titlebox .subButtons {
     left:-36px;
     padding-left:36px;
     background:#ffeded;
+    box-shadow:-8px 0 8px -4px #aaa;
 }
 .titlebox .usertext-body ol::after {
     content:"";
@@ -1301,9 +1304,6 @@ body:not(.res) .titlebox .subscribe-button, body.res .titlebox .subButtons {
 
 
 /* text/comments */
-* {
-    font-family:"Liberation Sans", "Verdana", "Helvetica", "Arial", sans-serif;
-}
 .entry {
     padding:8px 12px;
 }
@@ -1318,7 +1318,7 @@ body:not(.res) .titlebox .subscribe-button, body.res .titlebox .subButtons {
 .link .usertext .md {
     border:0;
     padding:4px 12px;
-    background:#f2f2f2;
+    background:none;
     border-radius:0;
 }
 .comment {
@@ -1332,24 +1332,49 @@ body:not(.res) .titlebox .subscribe-button, body.res .titlebox .subButtons {
     box-shadow:4px 4px 8px 2px #ddd;
 }
 .comment .child {
-    border-left:2px dotted #ddd !important;
+    /* border-left:2px dotted #ddd !important; /* the dotted border approach */
+    box-shadow:-4px 0 8px #ddd; /* or the shadow approach */
 }
-.morecomments {
+.morechildren, .morerecursion {
+    padding:7px 8px 1px;
 }
-.morecomments a {
+.morecomments a, .deepthread a {
     color:#eee !important;
     margin-left:8px;
     padding:4px 8px;
     background:#0094ff;
-    box-shadow:2px 2px 4px 1px #ddd;
-    transition:0.4s all;
+    box-shadow:2px 2px 4px 1px #ccc;
+    position:relative;
+    font-size:10px;
+    font-weight:bold;
+}
+.morecomments a::before, .deepthread a::before {
+    content:" ";
+    display:inline-block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:-28px;
+    border:1px solid transparent;
+    border-width:10px 14px;
+    border-color:transparent transparent transparent #0094ff;
 }
 .morecomments a .gray {
     color:#ddd;
 }
-.morecomments a:hover {
+.deepthread::after {
+    background-image:none;
+    display:none;
+}
+.deepthread a::after {
+    content:"...";
+}
+.morecomments a:hover, .deepthread a:hover {
     background:#00a4ff;
     text-decoration:none;
+}
+.morecomments a:hover::before, .deepthread a:hover::before {
+    border-color:transparent transparent transparent #00a4ff;
 }
 .morechildren .entry {
     overflow:visible;
@@ -1360,10 +1385,22 @@ a, .tagline a {
 a:hover, .tagline a:hover {
     color:#2bf;
 }
+.md h1 {
+    font-size:140%;
+    font-weight:bold;
+}
 .md hr, .md > hr {
     border:0;
     border-top:2px dotted #999;
     margin:8px 0 !important;
+}
+.md code, .md kbd, .md var {
+    padding:2px 4px;
+    display:inline-block;
+    margin:4px;
+    background:#f2f2f2;
+    border:1px solid #e2e2e2;
+    border-radius:2px;
 }
 
 
@@ -1381,8 +1418,9 @@ a:hover, .tagline a:hover {
     background:url(assets/downvoted-periwinkle.png) 0 2px no-repeat;
 }
 .score {
-    font-weight:normal;
+    font-weight:bold;
     font-family:"Liberation Sans", Arial, sans-serif;
+    color:#333;
 }
 
 /* names/flairs */
